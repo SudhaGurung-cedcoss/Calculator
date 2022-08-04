@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div id="container">
+        <div id="circle" onclick="circle()"></div>
+        <div id="circle2" onclick="circle2()"></div>
+        <div id="circle3" onclick="circle3()"></div>
+        <input type="text" name="" id="getValue" ">
+        <div class="innerflex-container">
+            <div class="item">
+                <button onclick="c()">C</button>
+            </div>
+            <div class="item">
+                 <button onclick="cut()">X</button></div>
+            <div class="item">
+                 <button   id="percentage" onclick="operator('%')" >%</button></div>
+            <div class="item hi" >
+                <button id="divide" onclick="operator('/')"  class="orange">/</button>
+            </div>
+        </div>
+        <div class="innerflex-container">
+             <div  class="item">
+                 <button id="7"onclick="number(this)">7</button>
+             </div>
+             <div class="item">
+                <button id="8" onclick="number(this)">8</button>
+             </div>
+             <div class="item">
+                 <button  id="9" onclick="number(this)">9</button>
+             </div>
+              <div class="item hi">
+                <button id="multiply" onclick="operator('*')" class="orange">*</button>
+              </div>   
+        </div>
+        <div class="innerflex-container">
+                <div class="item">
+                    <button  id="6"  onclick="number(this)">6</button>
+                </div>
+                <div class="item">
+                    <button id="5"  onclick="number(this)">5</button>
+                </div>
+                <div class="item">
+                     <button id="4" onclick="number(this)">4</button>
+                </div>
+                <div class="item hi">
+                    <button id="minus" onclick="operator('-')"  class="orange">-</button>
+                </div>   
+        </div>
+        <div class="innerflex-container">
+                <div class="item">
+                    <button   id="3" onclick="number(this)">3</button>
+                </div>
+                <div class="item">
+                     <button id="2" onclick="number(this)">2</button>
+                </div>
+                <div class="item">
+                    <button id="1" onclick="number(this)">1</button>
+                </div>
+                <div class="item hi">
+                    <button id="plus" onclick="operator('+')"  class="orange">+</button>
+                </div>   
+           </div>
+
+           <div class="innerflex-container">
+            <div class="item3">
+                <button id="0" onclick="number(this)">0</button>
+            </div>
+            <div class="item2">
+                <button onclick="dot()">.</button></div>
+            <div class="item2 b">
+                <button onclick="equal()" class="orange">=</button>
+            </div>
+            
+       </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
